@@ -9,7 +9,7 @@ source:
   sha256: 6c84bae345b9147082b17371e3dd5d42775bddce91f885499017f4607fdaf39f
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<38 or win]
   script:
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --config-settings="--build-option=build_ext" --config-settings="--build-option=--cython-always" --config-settings="--build-option=--use-system-libuv"
